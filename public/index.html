@@ -32,6 +32,7 @@
 
     <div id="contenido4">
         <p id = "contador"></p>
+        <button onclick="sumar()">Pulsar</button>
     </div>
 
     <script>
@@ -42,7 +43,37 @@
         p1.textContent="hola mundo"
         p2.textContent="klk"
         contenido2.appendChild(p1)  
-        contenido2.appendChild(p2)       
+        contenido2.appendChild(p2)      
+        
+        let contador = 0;
+        let contadorElement = document.querySelector("#contador")
+        contadorElement.textContent = contador;
+
+        function sumar(){
+            console.log("funcion disparada")
+            contador++;
+            contadorElement.textContent = contador;
+        }
+
+        const frutas = ["manzana", "pera", "mango", "papaya"]
+        const listaElement = document.createElement("ul")
+        const elementoLista0 = document.createElement("li")
+        for(let i = 0;i < frutas.length;i++){
+            console.log(frutas[i]);
+            const elementoLista0 = document.createElement("li")
+            elementoLista.textContent=frutas[i]
+            listaElement.appendChild(elementoLista)
+        }
+        document.baby.appendChild(listaElement)
+        console.log("despues del loop")
+
+        let nombre = "diego"
+        console.log(nombre)
+        for(let i=0;i < 3;i++){
+            console.log(i)
+            let nombre = "manolo"
+            console.log(nombre)
+        }
     </script>
 </body>
 </html>
